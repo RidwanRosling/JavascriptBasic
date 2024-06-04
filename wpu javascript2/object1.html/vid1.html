@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // object literal
+      let mahasiswa = {
+        nama: "ridwan",
+        energey: 10,
+        makan: function (porsi) {
+          this.energi = this.energi + porsi;
+          console.log(`halo ${this.nama}, selamat makan`);
+        },
+      };
+
+      // let mahasiswa2 = {
+      //     nama: 'ridwan',
+      //     energey: 10,
+      //     makan: function(porsi){
+      //         this.energi = this.energi + porsi;
+      //         console.log(`halo ${this.nama}, selamat makan`)
+      //     }
+      // }
+
+      // 2. function declaration
+      function Mahasiswa(nama, energi) {
+        let mahasiswa = {};
+        mahasiswa.nama = nama;
+        mahasiswa.energi = energi;
+        mahasiswa.makan = function (porsi) {};
+      }
+    </script>
+  </body>
+</html>

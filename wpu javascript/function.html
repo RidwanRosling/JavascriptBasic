@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script>
+      // function declaration
+      function jumlahDuaBilangan(a, b) {
+        let total;
+        total = a + b;
+
+        return total;
+      }
+      alert(jumlahDuaBilangan(20, 32));
+      //   function ekspresion
+      // //   let jumlahDuaBilangan = function (a, b){
+      //     let total;
+      //     total = a + b
+
+      //     return total;
+      // // }
+    </script> -->
+
+    <script>
+      // function tambah(a, b) {
+      //   return a + b;
+      // }
+      // let a = parseInt(prompt("masukan nilai 1"));
+      // let b = parseInt(prompt("masukan nilai 2"));
+      // let hasil = tambah(a, b);
+      // alert(hasil);
+      // function tambah() {
+      //   return arguments;
+      // }
+      // let coba = tambah(5, 10, "hi", true);
+      // console.log(coba);
+      function tambah() {
+        hasil = 0;
+        for (let i = 0; i < arguments.length; i++) hasil += arguments[i];
+        return hasil;
+      }
+      let coba = tambah(1, 2, 3);
+      console.log(hasil);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      tanya = true;
+      while (tanya) {
+        // menangkap pilihan player
+        let p = prompt("pilih : gajah, orang, semut");
+
+        let comp = Math.random();
+
+        if (comp < 0.44) {
+          comp = "gajah";
+        } else if (comp >= 0.44 && comp < 0.67) {
+          comp = "orang";
+        } else {
+          comp = "semut";
+        }
+
+        let hasil = "";
+        // menentukan rules
+        if (p == comp) {
+          alert("hasilnya seri");
+        } else if (p == "gajah") {
+          // if (comp == "orang") {
+          //   hasil = "MENANG!";
+          // } else {
+          //   hasil = "KALAH";
+          // }
+          hasil = comp == "orang" ? "MENANG!" : "KALAH";
+        } else if (p == "orang") {
+          hasil = comp == "gajah" ? "KALAH" : "MENANG!";
+        } else if (p == "semut") {
+          hasil = comp == "orang" ? "KALAH" : "MENANG!";
+        } else {
+          hasil = "memasukan pilahan yang salah";
+        }
+
+        // tampilkan hasilnya
+        alert(
+          "kamu memilih : " +
+            p +
+            "dan komputer memilih : " +
+            comp +
+            "\n maka hasilnya : kamu " +
+            hasil
+        );
+
+        tanya = confirm("lagi?");
+      }
+      alert("terimakasih sudah bermain");
+    </script>
+  </body>
+</html>
